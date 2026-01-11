@@ -1,4 +1,5 @@
 // We store notes in the browser using localStorage.
+const themeBtn = document.getElementById("themeBtn");
 
 const titleInput = document.getElementById("titleInput");
 const noteInput = document.getElementById("noteInput");
@@ -118,6 +119,23 @@ addBtn.addEventListener("click", addNote);
 
 searchInput.addEventListener("input", () => {
   renderNotes(searchInput.value);
+});
+// ---------- DARK MODE ----------
+
+function setTheme(isDark) {
+  document.body.classList.toggle("dark", isDark);
+  localStorage.setItem("darkMode", isDark);
+  themeBtn.textContent = isDark ? "☀️ Light mode" : "🌙 Dark mode";
+}
+
+// Load theme when page opens
+const savedTheme = localStorage.getItem("darkMode") === "true";
+setTheme(savedTheme);
+
+// Button click
+themeBtn.addEventListener("click", () => {
+  const isDark = document.body.classList.contains("dark");
+  setTheme(!isDark);
 });
 
 // Show notes when the page loads
