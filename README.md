@@ -2,6 +2,12 @@
 Study-Helper
 # 🩶 Study Helper Web App
 
+## 🔄 Updates / Development Log
+
+### 11 January 2026
+- Added dark mode with a toggle button  
+- Implemented theme persistence using localStorage (theme is remembered after refresh)  
+
 ## 📌 Description
 Study Helper is a simple web-based application that allows users to write, save, search, and manage study notes directly in their browser.
 
