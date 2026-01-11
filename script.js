@@ -1,5 +1,4 @@
 // We store notes in the browser using localStorage.
-// localStorage is like a tiny drawer inside your browser.
 
 const titleInput = document.getElementById("titleInput");
 const noteInput = document.getElementById("noteInput");
