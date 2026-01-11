@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Helper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>🩶 Study Helper</h1>
+
+    <section class="card">
+      <h2>Add a note</h2>
+
+      <label>
+        Title
+        <input id="titleInput" type="text" placeholder="e.g. Photosynthesis" />
+      </label>
+
+      <label>
+        Note
+        <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+      </label>
+
+      <button id="addBtn">Add note</button>
+      <p id="msg" class="msg"></p>
+    </section>
+
+    <section class="card">
+      <h2>Your notes</h2>
+
+      <input id="searchInput" type="text" placeholder="Search notes..." />
+
+      <ul id="notesList" class="list"></ul>
+      <p id="emptyState" class="muted">No notes yet. Add one ☝️</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

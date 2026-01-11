@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 24px;
+  background: #f5f5f7;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+label {
+  display: block;
+  margin: 12px 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.note {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.note h3 {
+  margin: 0 0 6px;
+}
+
+.note p {
+  margin: 0 0 10px;
+  white-space: pre-wrap;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+.small {
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.danger {
+  background: #b00020;
+}
+
+.muted {
+  color: #666;
+}
+
+.msg {
+  margin-top: 10px;
+  color: #b00020;
+}
